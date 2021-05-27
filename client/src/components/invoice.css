@@ -1,0 +1,24 @@
+.invoice-form{
+  backdrop-filter: blur(10px);
+  animation: slide-from-left 1s forwards;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.background {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes slide-from-left{
+    0%{
+      opacity: 0.3;
+      transform: translateX(-100%);
+    },
+    100%{
+      opacity: 1;
+      transform: translateX(0%);
+    }
+}
